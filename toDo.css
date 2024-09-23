@@ -1,0 +1,87 @@
+:root {
+  --mainColor: #9e78cf;
+  --secColor: #3e1671;
+  --bgColor: #0d0714;
+  --secBgColor: #15101c;
+  --greenColor: #78cfb0;
+}
+body {
+    background-color: var(--bgColor);
+}
+i ,
+#add {
+  transition-duration: 0.5s;
+}
+i {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-style: normal;
+  cursor: pointer;
+  color: var(--mainColor);
+}
+i:hover {
+  color: #3e1671;
+}
+i:not(:last-child) {
+  margin-right: 20px;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: flex;
+  margin: auto;
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  background-color: var(--secBgColor);
+}
+li .text {
+  flex: 1;
+  color: var(--mainColor);
+}
+.ulFinished .text {
+    color: var(--greenColor);
+    text-decoration: line-through;
+}
+h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  display: block;
+}
+.generator {
+  margin: 0px auto;
+  padding: 5rem 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  max-width: 500px;
+  margin: auto;
+}
+#toDoText {
+  font-size: 1.5rem;
+  padding: 5px 15px;
+  flex-basis: 90%;
+  background-color: transparent;
+  border: 1px solid;
+  outline: none;
+  box-sizing: border-box;
+  border-radius: 6px;
+  color: rgb(158, 120, 207);
+  border-color: rgb(158, 120, 207);
+}
+#add {
+  font-size: 2rem;
+  padding: 4px 12px;
+  border-radius: 6px;
+  color: #fff;
+  background-color: var(--mainColor);
+  border: none;
+  cursor: pointer;
+}
+#add:hover {
+    background-color: var(--secColor);
+}
